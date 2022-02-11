@@ -1,0 +1,26 @@
+body {
+    background-color: #282828;
+}
+.header {
+    text-align: center;
+    color: #9e3131;
+}
+#search {
+   text-align: center;
+}
+div.musician {
+    background-color: rgb(94, 93, 93);
+    color: #ddd;
+    padding: 1em;
+    margin-left: 480px;
+    margin-bottom: 1em;
+    text-align: center;
+    background-position: center;
+    width: 400px;
+}
+#like {
+    background: white;
+}
+#like.second {
+    background: #9e3131;
+}
