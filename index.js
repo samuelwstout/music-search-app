@@ -19,12 +19,23 @@ function searchAPI (search) {
     let SEARCH_PATH = search
     let FINAL_URL = `${BASE_URL}term=${SEARCH_PATH}&media=music&limit=20`
 
-//Render Functions 
 
+//Render Functions 
 const renderSearchResults = (searchResult) => {
     let card = document.createElement('li')
     card.className = card
-   
+    card.addEventListener('click', () => {
+        let searchObj = {
+            artistName: searchResult.artistName,
+            artistViewUrl: searchResult.artistViewUrl,
+            trackViewUrl: searchResult.trackViewUrl,
+            trackName: searchResult.trackName,
+            collectionViewUrl: searchResult.collectionViewUrl,
+            collectionName: searchResult.collectionName,
+            previewUrl: searchResult.previewUrl,
+            artworkUrl100: searchResult.artworkUrl100
+        }
+    })
     card.innerHTML = `
     <div class="musician">
     <p id="artistName">${searchResult.artistName}</p>
@@ -36,7 +47,9 @@ const renderSearchResults = (searchResult) => {
 </div>
     `
     document.querySelector('#result-list').appendChild(card)
+ 
 }
+
 
 //Fetch Requests
     fetch(FINAL_URL)
