@@ -35,6 +35,7 @@ const renderSearchResults = (searchResult) => {
             previewUrl: searchResult.previewUrl,
             artworkUrl100: searchResult.artworkUrl100
         }
+        postClickedResult(searchObj)
     })
     card.innerHTML = `
     <div class="musician">
@@ -47,7 +48,7 @@ const renderSearchResults = (searchResult) => {
 </div>
     `
     document.querySelector('#result-list').appendChild(card)
- 
+
 }
 
 
@@ -60,5 +61,16 @@ const renderSearchResults = (searchResult) => {
              renderSearchResults(searchResult)
          })
      })
+
+    const postClickedResult = (searchObj) => {
+        fetch('http://localhost:3000/clicked', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(searchObj)
+        })
+         .then(res => res.json())
+         .then(searchResult => console.log(searchResult))
+  }
 }
-//searchResults => searchResults.map(searchResult => renderSearchResults(searchResult)))
