@@ -48,7 +48,7 @@ const renderSearchResults = (searchResult) => {
 </div>
     `
     document.querySelector('#result-list').appendChild(card)
-
+    document.querySelector('#clicked-list').appendChild(card)
 }
 
 
@@ -71,6 +71,6 @@ const renderSearchResults = (searchResult) => {
             body: JSON.stringify(searchObj)
         })
          .then(res => res.json())
-         .then(searchResult => console.log(searchResult))
+         .then(searchResult => renderSearchResults(searchResult))
   }
 }

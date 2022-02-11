@@ -10,6 +10,226 @@
       "collectionName": "",
       "previewUrl": "",
       "artworkUrl100": ""
+    },
+    {
+      "artistName": "Adele",
+      "artistViewUrl": "https://music.apple.com/us/artist/adele/262836961?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "trackName": "Hello",
+      "collectionViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "collectionName": "25",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e8/28/29/e828299c-cea7-dd3e-8612-77a632bd60e3/mzaf_7797752939119995161.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e6/da/e9/e6dae950-3b74-8df4-b40a-dba4161bf067/source/100x100bb.jpg",
+      "id": 1
+    },
+    {
+      "artistName": "Adele",
+      "artistViewUrl": "https://music.apple.com/us/artist/adele/262836961?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "trackName": "Hello",
+      "collectionViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "collectionName": "25",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e8/28/29/e828299c-cea7-dd3e-8612-77a632bd60e3/mzaf_7797752939119995161.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e6/da/e9/e6dae950-3b74-8df4-b40a-dba4161bf067/source/100x100bb.jpg",
+      "id": 2
+    },
+    {
+      "artistName": "HELLO",
+      "artistViewUrl": "https://music.apple.com/us/artist/hello/68212324?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/new-york-groove/211319791?i=211320329&uo=4",
+      "trackName": "New York Groove",
+      "collectionViewUrl": "https://music.apple.com/us/album/new-york-groove/211319791?i=211320329&uo=4",
+      "collectionName": "The Glam Singles Collection",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ad/26/85/ad26850e-a239-e919-4434-f61646eeed34/mzaf_8342078502368052287.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/5d/d5/195dd5f7-88f8-cd00-a08a-326f033c6350/source/100x100bb.jpg",
+      "id": 3
+    },
+    {
+      "artistName": "HELLO",
+      "artistViewUrl": "https://music.apple.com/us/artist/hello/68212324?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/new-york-groove/211319791?i=211320329&uo=4",
+      "trackName": "New York Groove",
+      "collectionViewUrl": "https://music.apple.com/us/album/new-york-groove/211319791?i=211320329&uo=4",
+      "collectionName": "The Glam Singles Collection",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ad/26/85/ad26850e-a239-e919-4434-f61646eeed34/mzaf_8342078502368052287.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/5d/d5/195dd5f7-88f8-cd00-a08a-326f033c6350/source/100x100bb.jpg",
+      "id": 4
+    },
+    {
+      "artistName": "Lil Jon",
+      "artistViewUrl": "https://music.apple.com/us/artist/lil-jon/1869683?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/hey-feat-3oh-3/1443232205?i=1443232632&uo=4",
+      "trackName": "Hey (feat. 3OH!3)",
+      "collectionViewUrl": "https://music.apple.com/us/album/hey-feat-3oh-3/1443232205?i=1443232632&uo=4",
+      "collectionName": "Crunk Rock",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/da/ec/a4/daeca49f-a895-4b63-2b64-67a53273229c/mzaf_15501325803090605879.plus.aac.p.m4a",
+      "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/96/0d/a2/960da23d-1c1b-2be3-bf56-0890448d9ff6/source/100x100bb.jpg",
+      "id": 5
+    },
+    {
+      "artistName": "HELLO",
+      "artistViewUrl": "https://music.apple.com/us/artist/hello/68212324?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/new-york-groove/211319791?i=211320329&uo=4",
+      "trackName": "New York Groove",
+      "collectionViewUrl": "https://music.apple.com/us/album/new-york-groove/211319791?i=211320329&uo=4",
+      "collectionName": "The Glam Singles Collection",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ad/26/85/ad26850e-a239-e919-4434-f61646eeed34/mzaf_8342078502368052287.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/5d/d5/195dd5f7-88f8-cd00-a08a-326f033c6350/source/100x100bb.jpg",
+      "id": 6
+    },
+    {
+      "artistName": "Adele",
+      "artistViewUrl": "https://music.apple.com/us/artist/adele/262836961?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "trackName": "Hello",
+      "collectionViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "collectionName": "25",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e8/28/29/e828299c-cea7-dd3e-8612-77a632bd60e3/mzaf_7797752939119995161.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e6/da/e9/e6dae950-3b74-8df4-b40a-dba4161bf067/source/100x100bb.jpg",
+      "id": 7
+    },
+    {
+      "artistName": "Josh Groban",
+      "artistViewUrl": "https://music.apple.com/us/artist/josh-groban/170344?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/all-i-ask-of-you-duet-with-kelly-clarkson-from/972337386?i=972337395&uo=4",
+      "trackName": "All I Ask of You (Duet with Kelly Clarkson) [From \"The Phantom of the Opera\"]",
+      "collectionViewUrl": "https://music.apple.com/us/album/all-i-ask-of-you-duet-with-kelly-clarkson-from/972337386?i=972337395&uo=4",
+      "collectionName": "Stages (Deluxe Version)",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/22/24/64/22246493-c29d-c80f-7881-cd71e4a19aa9/mzaf_6532845019387835680.plus.aac.p.m4a",
+      "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/ac/cb/5c/accb5c0f-0cdd-df1a-da27-e033b8c03e25/source/100x100bb.jpg",
+      "id": 8
+    },
+    {
+      "artistName": "Josh Groban",
+      "artistViewUrl": "https://music.apple.com/us/artist/josh-groban/170344?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/old-devil-moon-feat-chris-botti-from-finians-rainbow/972337052?i=972337152&uo=4",
+      "trackName": "Old Devil Moon (feat. Chris Botti) [From \"Finian's Rainbow\"]",
+      "collectionViewUrl": "https://music.apple.com/us/album/old-devil-moon-feat-chris-botti-from-finians-rainbow/972337052?i=972337152&uo=4",
+      "collectionName": "Stages",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/91/4c/c8914c69-6aa4-67e1-97d9-f792a66f72f6/mzaf_7155272956423288403.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2a/cf/a4/2acfa480-c978-c8e8-edcb-f320338eb7ed/source/100x100bb.jpg",
+      "id": 9
+    },
+    {
+      "artistName": "Hey",
+      "artistViewUrl": "https://music.apple.com/us/artist/hey/46080566?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/sic-version-2017/1502719949?i=1502719952&uo=4",
+      "trackName": "Sic!",
+      "collectionViewUrl": "https://music.apple.com/us/album/sic-version-2017/1502719949?i=1502719952&uo=4",
+      "collectionName": "Cdn",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1c/57/6e/1c576e39-b78f-b366-d1de-060573363731/mzaf_13524260720675018186.plus.aac.p.m4a",
+      "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/65/cc/83/65cc83f8-b4b2-50d0-7460-4c6656233f09/source/100x100bb.jpg",
+      "id": 10
+    },
+    {
+      "artistName": "Hey",
+      "artistViewUrl": "https://music.apple.com/us/artist/hey/46080566?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/sic-version-2017/1502719949?i=1502719952&uo=4",
+      "trackName": "Sic!",
+      "collectionViewUrl": "https://music.apple.com/us/album/sic-version-2017/1502719949?i=1502719952&uo=4",
+      "collectionName": "Cdn",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1c/57/6e/1c576e39-b78f-b366-d1de-060573363731/mzaf_13524260720675018186.plus.aac.p.m4a",
+      "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/65/cc/83/65cc83f8-b4b2-50d0-7460-4c6656233f09/source/100x100bb.jpg",
+      "id": 11
+    },
+    {
+      "artistName": "HELLO",
+      "artistViewUrl": "https://music.apple.com/us/artist/hello/68212324?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/new-york-groove/211319791?i=211320329&uo=4",
+      "trackName": "New York Groove",
+      "collectionViewUrl": "https://music.apple.com/us/album/new-york-groove/211319791?i=211320329&uo=4",
+      "collectionName": "The Glam Singles Collection",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ad/26/85/ad26850e-a239-e919-4434-f61646eeed34/mzaf_8342078502368052287.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/5d/d5/195dd5f7-88f8-cd00-a08a-326f033c6350/source/100x100bb.jpg",
+      "id": 12
+    },
+    {
+      "artistName": "HELLO",
+      "artistViewUrl": "https://music.apple.com/us/artist/hello/68212324?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/gotta-lotta-soul/211319791?i=211320951&uo=4",
+      "trackName": "Gotta Lotta Soul",
+      "collectionViewUrl": "https://music.apple.com/us/album/gotta-lotta-soul/211319791?i=211320951&uo=4",
+      "collectionName": "The Glam Singles Collection",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a2/e5/0b/a2e50bd9-f1b0-9568-766d-02e334cf6b8d/mzaf_6405824010170909962.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/5d/d5/195dd5f7-88f8-cd00-a08a-326f033c6350/source/100x100bb.jpg",
+      "id": 13
+    },
+    {
+      "artistName": "HELLO",
+      "artistViewUrl": "https://music.apple.com/us/artist/hello/68212324?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/gotta-lotta-soul/211319791?i=211320951&uo=4",
+      "trackName": "Gotta Lotta Soul",
+      "collectionViewUrl": "https://music.apple.com/us/album/gotta-lotta-soul/211319791?i=211320951&uo=4",
+      "collectionName": "The Glam Singles Collection",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a2/e5/0b/a2e50bd9-f1b0-9568-766d-02e334cf6b8d/mzaf_6405824010170909962.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/5d/d5/195dd5f7-88f8-cd00-a08a-326f033c6350/source/100x100bb.jpg",
+      "id": 14
+    },
+    {
+      "artistName": "Karmin",
+      "artistViewUrl": "https://music.apple.com/us/artist/karmin/367987770?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/brokenhearted/517705569?i=517705639&uo=4",
+      "trackName": "Brokenhearted",
+      "collectionViewUrl": "https://music.apple.com/us/album/brokenhearted/517705569?i=517705639&uo=4",
+      "collectionName": "Hello",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/60/4d/69/604d697f-dee4-51fa-14fc-93e6508ae884/mzaf_15000313340527746041.plus.aac.p.m4a",
+      "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/fa/3c/c8/fa3cc84a-c233-e302-b95e-83991358cfcd/source/100x100bb.jpg",
+      "id": 15
+    },
+    {
+      "artistName": "Martin Solveig & Dragonette",
+      "artistViewUrl": "https://music.apple.com/us/artist/martin-solveig/15201848?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/hello/405926181?i=405926184&uo=4",
+      "trackName": "Hello",
+      "collectionViewUrl": "https://music.apple.com/us/album/hello/405926181?i=405926184&uo=4",
+      "collectionName": "Hello - Single",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/36/0a/67/360a6764-71c2-893c-3eb7-1288d7367393/mzaf_5913003536931577420.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/72/81/2b/72812b19-359d-cc82-b216-fc58a43b3bef/source/100x100bb.jpg",
+      "id": 16
+    },
+    {
+      "artistName": "Adele",
+      "artistViewUrl": "https://music.apple.com/us/artist/adele/262836961?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "trackName": "Hello",
+      "collectionViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "collectionName": "25",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e8/28/29/e828299c-cea7-dd3e-8612-77a632bd60e3/mzaf_7797752939119995161.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e6/da/e9/e6dae950-3b74-8df4-b40a-dba4161bf067/source/100x100bb.jpg",
+      "id": 17
+    },
+    {
+      "artistName": "Adele",
+      "artistViewUrl": "https://music.apple.com/us/artist/adele/262836961?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "trackName": "Hello",
+      "collectionViewUrl": "https://music.apple.com/us/album/hello/1544494115?i=1544494392&uo=4",
+      "collectionName": "25",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e8/28/29/e828299c-cea7-dd3e-8612-77a632bd60e3/mzaf_7797752939119995161.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e6/da/e9/e6dae950-3b74-8df4-b40a-dba4161bf067/source/100x100bb.jpg",
+      "id": 18
+    },
+    {
+      "artistName": "HELLO",
+      "artistViewUrl": "https://music.apple.com/us/artist/hello/68212324?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/gotta-lotta-soul/211319791?i=211320951&uo=4",
+      "trackName": "Gotta Lotta Soul",
+      "collectionViewUrl": "https://music.apple.com/us/album/gotta-lotta-soul/211319791?i=211320951&uo=4",
+      "collectionName": "The Glam Singles Collection",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a2/e5/0b/a2e50bd9-f1b0-9568-766d-02e334cf6b8d/mzaf_6405824010170909962.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/5d/d5/195dd5f7-88f8-cd00-a08a-326f033c6350/source/100x100bb.jpg",
+      "id": 19
+    },
+    {
+      "artistName": "HELLO",
+      "artistViewUrl": "https://music.apple.com/us/artist/hello/68212324?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/gotta-lotta-soul/211319791?i=211320951&uo=4",
+      "trackName": "Gotta Lotta Soul",
+      "collectionViewUrl": "https://music.apple.com/us/album/gotta-lotta-soul/211319791?i=211320951&uo=4",
+      "collectionName": "The Glam Singles Collection",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a2/e5/0b/a2e50bd9-f1b0-9568-766d-02e334cf6b8d/mzaf_6405824010170909962.plus.aac.p.m4a",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/5d/d5/195dd5f7-88f8-cd00-a08a-326f033c6350/source/100x100bb.jpg",
+      "id": 20
     }
   ]
 }

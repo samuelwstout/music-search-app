@@ -21,3 +21,6 @@ div.musician {
 ::marker {
     color: #282828;
 }
+#clicked-list {
+    margin-right: 100px;
+}
