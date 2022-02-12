@@ -8,26 +8,6 @@ body {
 #search {
    text-align: center;
 }
-.result-list.div.musician {
-    background-color: rgb(94, 93, 93);
-    color: #ddd;
-    padding: 1em;
-    margin-left: 240px;
-    margin-bottom: 1em;
-    text-align: center;
-    background-position: center;
-    width: 400px;
-}
-.clicked-list.div.clickedMusician {
-    background-color: rgb(94, 93, 93);
-    color: #ddd;
-    padding: 1em;
-    margin-left: 750px;
-    margin-bottom: 1em;
-    text-align: center;
-    background-position: center;
-    width: 400px;
-}
 ::marker {
     color: #282828;
 }
@@ -35,8 +15,31 @@ body {
     display: flex;
 }
 .result-list {
+    color: white;
     flex: 50%;
+   
+    text-align: center;
+    background-position: center;
+    width: 400px;
+    
 }
 .clicked-list {
+    color: white;
     flex: 50%;
+    text-align: center;
+    background-position: center;
+    width: 400px;
+    margin-top: 20px;
+}
+div.musician {
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: rgb(94, 93, 93);
+    margin-left: 100px;
+}
+div.clickedMusician {
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: rgb(94, 93, 93);
+    margin-left: 100px;
 }
