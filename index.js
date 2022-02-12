@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //Add user input to the DOM
 function searchAPI (search) {
     let p = document.createElement('p')
-    p.textContent = search 
+    p.textContent = search
 
 
 //API URL 
@@ -36,6 +36,7 @@ const renderSearchResults = (searchResult) => {
             artworkUrl100: searchResult.artworkUrl100
         }
         postClickedResult(searchObj)
+        
     })
     card.innerHTML = `
     <div class="musician">
@@ -47,10 +48,24 @@ const renderSearchResults = (searchResult) => {
     <p id="img"><img src=${searchResult.artworkUrl100}></img></p>
 </div>
     `
-    document.querySelector('#result-list').appendChild(card)
-    document.querySelector('#clicked-list').appendChild(card)
+    document.querySelector('.result-list').appendChild(card)
 }
 
+const renderClickedResults = (searchResult) => {
+    let clickedCard = document.createElement('li')
+    clickedCard.className = clickedCard
+    clickedCard.innerHTML = `
+    <div class="clickedMusician"
+    <p id="artistName">${searchResult.artistName}</p>
+    <p id="artistProfile"><a target="_blank" rel="noopener noreferrer" href=${searchResult.artistViewUrl}>Artist Profile</a></p>
+    <p id="song"><a target="_blank" rel="noopener noreferrer" href=${searchResult.trackViewUrl}>${searchResult.trackName}</a></p>
+    <p id="album"><a target="_blank" rel="noopener noreferrer" href=${searchResult.collectionViewUrl}>${searchResult.collectionName}</a></p>
+    <audio id="audio" controls src=${searchResult.previewUrl}> Your browser does not support the <code>audio</code> element.</audio>
+    <p id="img"><img src=${searchResult.artworkUrl100}></img></p>
+</div>
+    `
+    document.querySelector('.clicked-list').appendChild(clickedCard)
+}
 
 //Fetch Requests
     fetch(FINAL_URL)
@@ -71,6 +86,6 @@ const renderSearchResults = (searchResult) => {
             body: JSON.stringify(searchObj)
         })
          .then(res => res.json())
-         .then(searchResult => renderSearchResults(searchResult))
+         .then(searchResult => renderClickedResults(searchResult))
   }
 }

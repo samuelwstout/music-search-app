@@ -8,11 +8,21 @@ body {
 #search {
    text-align: center;
 }
-div.musician {
+.result-list.div.musician {
     background-color: rgb(94, 93, 93);
     color: #ddd;
     padding: 1em;
-    margin-left: 480px;
+    margin-left: 240px;
+    margin-bottom: 1em;
+    text-align: center;
+    background-position: center;
+    width: 400px;
+}
+.clicked-list.div.clickedMusician {
+    background-color: rgb(94, 93, 93);
+    color: #ddd;
+    padding: 1em;
+    margin-left: 750px;
     margin-bottom: 1em;
     text-align: center;
     background-position: center;
@@ -21,6 +31,12 @@ div.musician {
 ::marker {
     color: #282828;
 }
-#clicked-list {
-    margin-right: 100px;
+.row {
+    display: flex;
+}
+.result-list {
+    flex: 50%;
+}
+.clicked-list {
+    flex: 50%;
 }
