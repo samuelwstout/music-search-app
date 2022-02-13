@@ -33,10 +33,9 @@ const renderSearchResults = (searchResult) => {
             collectionViewUrl: searchResult.collectionViewUrl,
             collectionName: searchResult.collectionName,
             previewUrl: searchResult.previewUrl,
-            artworkUrl100: searchResult.artworkUrl100
+            artworkUrl100: searchResult.artworkUrl100,
         }
         postClickedResult(searchObj)
-        
     })
     card.innerHTML = `
     <div class="musician">
@@ -65,6 +64,7 @@ const renderClickedResults = (searchResult) => {
 </div>
     `
     document.querySelector('.clicked-list').appendChild(clickedCard)
+    updateClickedResult(searchResult)
 }
 
 //Fetch Requests
@@ -87,5 +87,17 @@ const renderClickedResults = (searchResult) => {
         })
          .then(res => res.json())
          .then(searchResult => renderClickedResults(searchResult))
+      
+  }
+  const updateClickedResult = (searchResult) => {
+      fetch(`http://localhost:3000/clicked`, {
+          method: 'PATCH',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(searchResult)
+      })
+        .then(res => res.json())
+        .then(searchResult => console.log(searchResult))
   }
 }
