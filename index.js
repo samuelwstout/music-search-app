@@ -87,10 +87,9 @@ const renderClickedResults = (searchResult) => {
         })
          .then(res => res.json())
          .then(searchResult => renderClickedResults(searchResult))
-      
   }
   const updateClickedResult = (searchResult) => {
-      fetch(`http://localhost:3001/clicked`, {
+      fetch(`http://localhost:3001/clicked/${searchResult.id}`, {
           method: 'PATCH',
           headers: {
               'Content-Type': 'application/json'
