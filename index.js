@@ -78,7 +78,7 @@ const renderClickedResults = (searchResult) => {
      })
 
     const postClickedResult = (searchObj) => {
-        fetch('http://localhost:3000/clicked', {
+        fetch('http://localhost:3001/clicked', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -90,7 +90,7 @@ const renderClickedResults = (searchResult) => {
       
   }
   const updateClickedResult = (searchResult) => {
-      fetch(`http://localhost:3000/clicked`, {
+      fetch(`http://localhost:3001/clicked`, {
           method: 'PATCH',
           headers: {
               'Content-Type': 'application/json'
