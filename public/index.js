@@ -50,24 +50,29 @@ const renderSearchResults = (searchResult) => {
     document.querySelector('.result-list').appendChild(card)
 }
 
-const renderClickedResults = (searchResult) => {
-    let clickedCard = document.createElement('li')
-    clickedCard.className = clickedCard
-    clickedCard.innerHTML = `
-    <div class="clickedMusician"
-    <p id="artistName">${searchResult.artistName}</p>
-    <p id="artistProfile"><a target="_blank" rel="noopener noreferrer" href=${searchResult.artistViewUrl}>Artist Profile</a></p>
-    <p id="song"><a target="_blank" rel="noopener noreferrer" href=${searchResult.trackViewUrl}>${searchResult.trackName}</a></p>
-    <p id="album"><a target="_blank" rel="noopener noreferrer" href=${searchResult.collectionViewUrl}>${searchResult.collectionName}</a></p>
-    <audio id="audio" controls src=${searchResult.previewUrl}> Your browser does not support the <code>audio</code> element.</audio>
-    <p id="img"><img src=${searchResult.artworkUrl100}></img></p>
+const renderJsonResults = (jsonResult) => {
+    let jsonCard = document.createElement('li')
+    jsonCard.innerHTML = `
+    <div class="musician">
+    <p id="artistName">${jsonResult.artistName}</p>
+    <p id="artistProfile"><a target="_blank" rel="noopener noreferrer" href=${jsonResult.artistViewUrl}>Artist Profile</a></p>
+    <p id="song"><a target="_blank" rel="noopener noreferrer" href=${jsonResult.trackViewUrl}>${jsonResult.trackName}</a></p>
+    <p id="album"><a target="_blank" rel="noopener noreferrer" href=${jsonResult.collectionViewUrl}>${jsonResult.collectionName}</a></p>
+    <audio id="audio" controls src=${jsonResult.previewUrl}> Your browser does not support the <code>audio</code> element.</audio>
+    <p id="img"><img src=${jsonResult.artworkUrl100}></img></p>
 </div>
     `
-    document.querySelector('.clicked-list').appendChild(clickedCard)
-    updateClickedResult(searchResult)
+    document.querySelector('.json-list').appendChild(jsonCard)
 }
 
+
+
 //Fetch Requests
+fetch('http://localhost:3000/musicians')
+.then(res => res.json())
+.then(json => json.forEach(jsonResult => renderJsonResults(jsonResult)))
+
+
     fetch(FINAL_URL)
      .then(res =>  res.json())
      .then(json => {
@@ -77,8 +82,10 @@ const renderClickedResults = (searchResult) => {
          })
      })
 
+     
+
     const postClickedResult = (searchObj) => {
-        fetch('http://localhost:3001/clicked', {
+        fetch('http://localhost:3000/musicians', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -86,17 +93,6 @@ const renderClickedResults = (searchResult) => {
             body: JSON.stringify(searchObj)
         })
          .then(res => res.json())
-         .then(searchResult => renderClickedResults(searchResult))
-  }
-  const updateClickedResult = (searchResult) => {
-      fetch(`http://localhost:3001/clicked/${searchResult.id}`, {
-          method: 'PATCH',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(searchResult)
-      })
-        .then(res => res.json())
-        .then(searchResult => console.log(searchResult))
+         .then(searchResult => console.log(searchResult))
   }
 }

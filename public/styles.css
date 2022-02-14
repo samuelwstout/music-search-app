@@ -23,7 +23,7 @@ body {
     width: 400px;
     
 }
-.clicked-list {
+.json-list {
     color: white;
     flex: 50%;
     text-align: center;
@@ -36,11 +36,4 @@ div.musician {
     margin-bottom: 1em;
     background-color: rgb(94, 93, 93);
     margin-left: 100px;
-}
-div.clickedMusician {
-    padding: 1em;
-    margin-bottom: 1em;
-    background-color: rgb(94, 93, 93);
-    margin-left: 100px;
-    
 }
