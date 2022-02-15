@@ -12,15 +12,48 @@
       "id": 1
     },
     {
-      "artistName": "Adele",
-      "artistViewUrl": "https://music.apple.com/us/artist/adele/262836961?uo=4",
-      "trackViewUrl": "https://music.apple.com/us/album/easy-on-me/1590035691?i=1590036021&uo=4",
-      "trackName": "Easy On Me",
-      "collectionViewUrl": "https://music.apple.com/us/album/easy-on-me/1590035691?i=1590036021&uo=4",
-      "collectionName": "30",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/75/28/56/75285676-dbce-d91d-7b36-070084a3546b/mzaf_5286200244455841527.plus.aac.p.m4a",
-      "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/a7/28/b2/a728b2bf-e6be-9340-ba7d-97506e5e2b0c/source/100x100bb.jpg",
+      "artistName": "Josh Groban",
+      "artistViewUrl": "https://music.apple.com/us/artist/josh-groban/170344?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/all-i-ask-of-you-duet-with-kelly-clarkson-from/972337386?i=972337395&uo=4",
+      "trackName": "All I Ask of You (Duet with Kelly Clarkson) [From \"The Phantom of the Opera\"]",
+      "collectionViewUrl": "https://music.apple.com/us/album/all-i-ask-of-you-duet-with-kelly-clarkson-from/972337386?i=972337395&uo=4",
+      "collectionName": "Stages (Deluxe Version)",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/22/24/64/22246493-c29d-c80f-7881-cd71e4a19aa9/mzaf_6532845019387835680.plus.aac.p.m4a",
+      "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/ac/cb/5c/accb5c0f-0cdd-df1a-da27-e033b8c03e25/source/100x100bb.jpg",
       "id": 2
+    },
+    {
+      "artistName": "Josh Groban",
+      "artistViewUrl": "https://music.apple.com/us/artist/josh-groban/170344?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/pure-imagination-from-charlie-and-the-chocolate-factory/972337386?i=972337391&uo=4",
+      "trackName": "Pure Imagination (From \"Charlie and the Chocolate Factory\")",
+      "collectionViewUrl": "https://music.apple.com/us/album/pure-imagination-from-charlie-and-the-chocolate-factory/972337386?i=972337391&uo=4",
+      "collectionName": "Stages (Deluxe Version)",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/7c/1d/7c7c1d0d-27b5-3d82-138e-faf38fbc1f32/mzaf_13211287061108686275.plus.aac.p.m4a",
+      "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/ac/cb/5c/accb5c0f-0cdd-df1a-da27-e033b8c03e25/source/100x100bb.jpg",
+      "id": 3
+    },
+    {
+      "artistName": "Josh Groban",
+      "artistViewUrl": "https://music.apple.com/us/artist/josh-groban/170344?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/youll-never-walk-alone-from-carousel/972337386?i=972337399&uo=4",
+      "trackName": "You'll Never Walk Alone (From \"Carousel\")",
+      "collectionViewUrl": "https://music.apple.com/us/album/youll-never-walk-alone-from-carousel/972337386?i=972337399&uo=4",
+      "collectionName": "Stages (Deluxe Version)",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/98/fd/f2/98fdf2b7-28ab-cf4f-b9fe-4a95bd75818b/mzaf_17881645121241586475.plus.aac.p.m4a",
+      "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/ac/cb/5c/accb5c0f-0cdd-df1a-da27-e033b8c03e25/source/100x100bb.jpg",
+      "id": 4
+    },
+    {
+      "artistName": "As I Lay Dying",
+      "artistViewUrl": "https://music.apple.com/us/artist/as-i-lay-dying/54266496?uo=4",
+      "trackViewUrl": "https://music.apple.com/us/album/undefined/54266890?i=54266766&uo=4",
+      "trackName": "Undefined",
+      "collectionViewUrl": "https://music.apple.com/us/album/undefined/54266890?i=54266766&uo=4",
+      "collectionName": "Frail Words Collapse",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/de/5a/d6de5abe-dcf0-6096-8bac-eaee36e82e3e/mzaf_13186890486917745089.plus.aac.p.m4a",
+      "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/24/b0/ef/24b0efad-2aa0-bc5f-ddcc-73003c68f216/source/100x100bb.jpg",
+      "id": 5
     }
   ]
 }

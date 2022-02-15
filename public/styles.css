@@ -13,6 +13,7 @@ body {
 }
 .row {
     display: flex;
+    margin-top: 30px;
 }
 .result-list {
     color: white;
@@ -36,4 +37,9 @@ div.musician {
     margin-bottom: 1em;
     background-color: rgb(94, 93, 93);
     margin-left: 100px;
+}
+.clickHeader {
+    margin-left: 58em;
+    color: white;
+    text-decoration: underline;
 }
