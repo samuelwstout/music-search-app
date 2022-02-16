@@ -1,0 +1,57 @@
+body {
+    background-color: #282828;
+}
+.header {
+    text-align: center;
+    color: #9e3131;
+}
+#search {
+   text-align: center;
+}
+.musician {
+    background-color: #617991;
+    color: #ddd;
+    padding: 1em;
+    margin-left: 5em;
+    margin-right: 14em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-position: center;
+    width: min-content;
+}
+.appleheading {
+    color: white;
+    margin-left: 230px;
+}
+.spotifyheading {
+    color: white;
+    margin-left: 1095px;
+    margin-top: -60px;
+}
+.albumsheading {
+    color: white;
+    margin-left: 940px;
+    margin-top: -4px;
+}
+.artistsheading {
+    color: white;
+    margin-left: 1100px;
+    margin-top: -44px;
+}
+.tracksheading {
+    color: white;
+    margin-left: 1250px;
+    margin-top: -34px;
+}
+.text {
+    color: white;
+}
+.musician2 {
+    margin-left: 600px;
+    background-color: #617991;
+    width: min-content;
+    text-align: center;
+}
+#albums {
+    margin-top: -525em;
+}
