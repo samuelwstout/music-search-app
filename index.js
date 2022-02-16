@@ -56,7 +56,6 @@ fetch(spotifyUrl, {
     })
  .then(r => r.json())
  .then(data => {
-    console.log(data.artists.items)
     const html2 = data.albums.items
     .map(searchTerm2 => {
         return `<div class="musician2">
@@ -71,7 +70,54 @@ fetch(spotifyUrl, {
 document.querySelector('#albums').innerHTML = html2.join('');
  })
 
+ fetch(spotifyUrl, {
+    method: 'GET',
+    headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${spotifyToken}`
+        }
+    })
+ .then(r => r.json())
+ .then(data => {
+    const html3 = data.artists.items
+    .map(searchTerm2 => {
+        return `<div>
+        <div>
+          <p class="text">${searchTerm2.name}</p>
+          <p><img src=${searchTerm2.images[1].url}></img></p>
+          <p><a class="text" href=${searchTerm2.uri}>Go to Spotify</a></p>
+        </div>
+        <div>
+        `
+    })
+document.querySelector('#artists').innerHTML = html3.join('');
+ })
 
+ fetch(spotifyUrl, {
+    method: 'GET',
+    headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${spotifyToken}`
+        }
+    })
+ .then(r => r.json())
+ .then(data => {
+    const html4 = data.tracks.items
+    .map(searchTerm2 => {
+        return `<div>
+        <div>
+          <p class="text">${searchTerm2.name}</p>
+          <p><a class="text" href=${searchTerm2.uri}>Go to Spotify</a></p>
+        </div>
+        <div>
+        `
+    })
+document.querySelector('#tracks').innerHTML = html4.join('');
+ })
+
+ 
 //Add like button to the DOM
 const allLikeButtons = document.querySelectorAll('#like')
 

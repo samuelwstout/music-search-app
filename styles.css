@@ -9,7 +9,6 @@ body {
    text-align: center;
 }
 .musician {
-    background-color: #617991;
     color: #ddd;
     padding: 1em;
     margin-left: 5em;
@@ -45,13 +44,4 @@ body {
 }
 .text {
     color: white;
-}
-.musician2 {
-    margin-left: 600px;
-    background-color: #617991;
-    width: min-content;
-    text-align: center;
-}
-#albums {
-    margin-top: -525em;
 }
