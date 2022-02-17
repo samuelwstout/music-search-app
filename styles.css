@@ -50,6 +50,13 @@ body {
     top: 160px;
     right: 540px;
 }
+#artists {
+    position: absolute;
+    right: 300px;
+    top: 160px;
+}
 #albums {
     position: absolute;
+    right: -80px;
+    top: 160px;
 }
