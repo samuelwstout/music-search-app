@@ -45,3 +45,11 @@ body {
 .text {
     color: white;
 }
+#tracks {
+    position: absolute;
+    top: 160px;
+    right: 540px;
+}
+#albums {
+    position: absolute;
+}

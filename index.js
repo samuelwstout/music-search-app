@@ -20,7 +20,7 @@ function searchAPI (search) {
 //Spotify API URL
     let spotifyUrl = `https://api.spotify.com/v1/search?q=${SEARCH_PATH}&type=track%2Calbum%2Cartist&limit=20&include_external=audio`
     
-    const spotifyToken = 'BQATfWMYWOEe0igaSg7n0sV7nu0WSwRSfRMnlzR3NJcxRf53UjWSDw3debfPVnVNZGK5m6eMk3ZeP1FHOuGufLTr_EKkWriNZFaig7MrSC0fJokR0N4tZC_xjawXA_IR1WdTuD6ogsxaMph7FuEvQB9LU4vWMJM0VMA'
+    const spotifyToken = 'BQCzW1FA981Kt9ptH_zOm6NFemOBAfjuO_zANOQH739W9vlcn1CF2tHjzaVHsTbTtMuDtNa_fVomeDnWqYxl9L56QNG4baRwrmxeAjNJ_8kRKjJFfndX5mpzDmWu90BOGnFZtMneGWXeURhYB82JyWC36j4-7xgwLHg'
 
 //Fetch Request
 fetch(FINAL_URL)
@@ -61,7 +61,7 @@ fetch(spotifyUrl, {
         return `<div class="musician2">
         <div>
           <p class="text">${searchTerm2.name}</p>
-          <p><img src=${searchTerm2.images[1].url}></img></p>
+          <p><img src=${searchTerm2.images[2].url}></img></p>
           <p><a class="text" href=${searchTerm2.uri}>Go to Spotify</a></p>
         </div>
         <div>
@@ -85,7 +85,7 @@ document.querySelector('#albums').innerHTML = html2.join('');
         return `<div>
         <div>
           <p class="text">${searchTerm2.name}</p>
-          <p><img src=${searchTerm2.images[1].url}></img></p>
+          <p><img src=${searchTerm2.images[2].url}></img></p>
           <p><a class="text" href=${searchTerm2.uri}>Go to Spotify</a></p>
         </div>
         <div>
@@ -106,8 +106,8 @@ document.querySelector('#artists').innerHTML = html3.join('');
  .then(data => {
     const html4 = data.tracks.items
     .map(searchTerm2 => {
-        return `<div>
-        <div>
+        return `
+        <div className='trackDiv'>
           <p class="text">${searchTerm2.name}</p>
           <p><a class="text" href=${searchTerm2.uri}>Go to Spotify</a></p>
         </div>
