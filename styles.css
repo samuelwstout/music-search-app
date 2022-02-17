@@ -48,15 +48,19 @@ body {
 #tracks {
     position: absolute;
     top: 160px;
-    right: 540px;
+    right: 670px;
 }
 #artists {
     position: absolute;
-    right: 300px;
+    right: 430px;
     top: 160px;
 }
 #albums {
     position: absolute;
-    right: -80px;
+    right: 20px;
     top: 160px;
+}
+#apple-list {
+    position: absolute;
+    left: -100px;
 }

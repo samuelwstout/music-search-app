@@ -20,7 +20,7 @@ function searchAPI (search) {
 //Spotify API URL
     let spotifyUrl = `https://api.spotify.com/v1/search?q=${SEARCH_PATH}&type=track%2Calbum%2Cartist&limit=20&include_external=audio`
     
-    const spotifyToken = 'BQCzW1FA981Kt9ptH_zOm6NFemOBAfjuO_zANOQH739W9vlcn1CF2tHjzaVHsTbTtMuDtNa_fVomeDnWqYxl9L56QNG4baRwrmxeAjNJ_8kRKjJFfndX5mpzDmWu90BOGnFZtMneGWXeURhYB82JyWC36j4-7xgwLHg'
+    const spotifyToken = 'BQAaV_4ckfxrHhTNLnACYmMWKfAfcRLyQ6c26UqYe21V2m1IeQamaz1-yL_C_xxJub5zMJUQVfFCzERJuPuBXKnRv16K2l7dSr1_ah_U4yO0D3MLO79rE5HqFLiSg6Zx5cioU9RdTvm48fjDSu3UKsZYJZOSvgDWr8w'
 
 //Fetch Request
 fetch(FINAL_URL)
@@ -85,7 +85,6 @@ document.querySelector('#albums').innerHTML = html2.join('');
         return `<div>
         <div>
           <p class="text">${searchTerm2.name}</p>
-          <p><img src=${searchTerm2.images[2].url}></img></p>
           <p><a class="text" href=${searchTerm2.uri}>Go to Spotify</a></p>
         </div>
         <div>
