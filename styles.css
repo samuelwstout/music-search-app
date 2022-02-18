@@ -3,7 +3,7 @@ body {
 }
 #search {
    text-align: center;
-   background-color: #000;
+   background-color: green;
    padding: 90px;
    margin-top: -5px;
    margin-right: -7px;
@@ -19,7 +19,7 @@ body {
     top: 120px;
     left: 550px;
 }
-#text-search {
+#textsearch {
     box-sizing: border-box;
     font-size: 15px;
     border-radius: 300px;
@@ -28,69 +28,23 @@ body {
     padding: 8px 52px;
     border: none;
 }
-#text-search:focus {
+#textsearch:focus {
     outline: none;
 }
-.close-icon {
-    position: relative;
-    top: 8px;
-    right: 82px;
-}
-.musician {
-    color: #ddd;
-    padding: 1em;
-    margin-left: 5em;
-    margin-right: 14em;
-    margin-bottom: 1em;
-    text-align: center;
-    background-position: center;
-    width: min-content;
-}
-.appleheading {
-    color: white;
-    margin-left: 230px;
-}
-.spotifyheading {
-    color: white;
-    margin-left: 1095px;
-    margin-top: -60px;
-}
-.albumsheading {
-    color: white;
-    margin-left: 940px;
-    margin-top: -4px;
-}
-.artistsheading {
-    color: white;
-    margin-left: 1100px;
-    margin-top: -44px;
-}
-.tracksheading {
-    color: white;
-    margin-left: 1250px;
-    margin-top: -34px;
-}
-.text {
-    color: white;
-}
-#tracks {
+#xbutton svg {
     position: absolute;
-    top: 160px;
-    right: 670px;
+    top: 6px;
+    right: 3px;
 }
-#artists {
+#xbutton {
+    background-color: white;
+    border: none;
+    width: 35px;
+    height: 36px;
     position: absolute;
-    right: 430px;
-    top: 160px;
-}
-#albums {
-    position: absolute;
-    right: 20px;
-    top: 160px;
-}
-#apple-list {
-    position: absolute;
-    left: -100px;
+    right: 42px;
+    top: 7px;
+    border-radius: 10px;
 }
 .searchbutton {
     position: absolute;
