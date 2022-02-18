@@ -4,7 +4,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('form').addEventListener('submit', (e) => {
         e.preventDefault()
-        searchAPI(e.target.text_search.value)
+        searchAPI(e.target.text-search.value)
     })
 })
 //Add user input to the DOM
@@ -20,7 +20,7 @@ function searchAPI (search) {
 //Spotify API URL
     let spotifyUrl = `https://api.spotify.com/v1/search?q=${SEARCH_PATH}&type=track%2Calbum%2Cartist&limit=20&include_external=audio`
     
-    const spotifyToken = 'BQAaV_4ckfxrHhTNLnACYmMWKfAfcRLyQ6c26UqYe21V2m1IeQamaz1-yL_C_xxJub5zMJUQVfFCzERJuPuBXKnRv16K2l7dSr1_ah_U4yO0D3MLO79rE5HqFLiSg6Zx5cioU9RdTvm48fjDSu3UKsZYJZOSvgDWr8w'
+    const spotifyToken = 'BQCXcf6UvBdKtobVV3FamA0SqYortAd_QpRZuOkLWtnjOgUG6ZjJ-LtEgVbHSc8H-JlK8xWuS9fbU1DR9kYRv0N5QQWCTyAn3lTejruyVj7ziwIpSo9zZtDjsD7oQv8t-OGdSJQLR5SZhfVZsYiEmfPxj1KA3GKuG-U'
 
 //Fetch Request
 fetch(FINAL_URL)
@@ -33,12 +33,11 @@ fetch(FINAL_URL)
             return `
             <div class="musician">
                 <p>${searchTerm.artistName}</p>
-                <p><a target="_blank" rel="noopener noreferrer" href=${searchTerm.artistViewUrl}>Artist Profile</a></p>
-                <p><a target="_blank" rel="noopener noreferrer" href=${searchTerm.trackViewUrl}>${searchTerm.trackName}</a></p>
-                <p><a target="_blank" rel="noopener noreferrer" href=${searchTerm.collectionViewUrl}>${searchTerm.collectionName}</a></p>
+                <p><a class="link" target="_blank" rel="noopener noreferrer" href=${searchTerm.artistViewUrl}>Artist Profile</a></p>
+                <p><a class="link" target="_blank" rel="noopener noreferrer" href=${searchTerm.trackViewUrl}>${searchTerm.trackName}</a></p>
+                <p><a class="link" target="_blank" rel="noopener noreferrer" href=${searchTerm.collectionViewUrl}>${searchTerm.collectionName}</a></p>
                 <audio controls src=${searchTerm.previewUrl}> Your browser does not support the <code>audio</code> element.</audio>
                 <p><img src=${searchTerm.artworkUrl100}></img></p>
-                <button id="like" type="button">Like</button>
             </div>
             `
         })
