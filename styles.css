@@ -28,21 +28,24 @@ body {
     padding: 8px 52px;
     border: none;
 }
+/* #textsearch:focus #close-icon {
+
+} */
 #textsearch:focus {
     outline: none;
 }
-#xbutton svg {
+#close-icon {
     position: absolute;
-    top: 6px;
-    right: 3px;
+    right: 44px;
+    top: 13px;
 }
 #xbutton {
-    background-color: white;
+    background-color: transparent;
     border: none;
     width: 35px;
     height: 36px;
     position: absolute;
-    right: 42px;
+    right: 39px;
     top: 7px;
     border-radius: 10px;
 }

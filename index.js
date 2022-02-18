@@ -2,8 +2,6 @@
 
 //DOMContentLoaded for the submit form from index.html
 document.addEventListener('DOMContentLoaded', () => {
-    const handleClick = (e) => console.log(e)
-    document.querySelector('#xbutton').addEventListener('click', handleClick)
     document.querySelector('form').addEventListener('submit', (e) => {
         e.preventDefault()
         searchAPI(e.target.textsearch.value)
