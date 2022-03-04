@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="index.js"></script>
-    <title>Music Search Tool</title>
+    <title>Music Search</title>
 </head>
-<body>
+<body onload="onPageLoad()">
    <div id="search">
+        <!-- <input type="text" class="form-control" id="clientId" placeholder="clientId">
+        <input type="text" class="form-control" id="clientSecret" placeholder="clientSecret"> -->
+        <input class="btn" type="button" onclick="requestAuthorization()" value="Request Authorization">
          <form class="search-bar">
            <input id="textsearch" type="text" title="Search">
            <img class="search-icon" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/30/000000/external-search-logistic-delivery-kiranshastry-lineal-kiranshastry.png"/>
@@ -22,10 +25,7 @@
          </form>
     </div>
     <div class="row">
-        <ul id="apple-list"></ul>
-        <ul id="albums"></ul>
-        <ul id="artists"></ul>
-        <ul id="tracks"></ul>
+        <ul id="results"></ul>
     </div>
 </body>
 </html>

@@ -1,21 +1,19 @@
-// API Documentation: https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html#//apple_ref/doc/uid/TP40017632-CH3-SW1
 
 //DOMContentLoaded for the submit form from index.html
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.querySelector('#textsearch')
-    searchInput.oninput = handleInput
-    function handleInput(e) {
+    const handleInput = (e) => {
         var resetbutton = document.querySelector('#resetbutton')
         if (e) {
             resetbutton.style.backgroundColor = 'transparent'
         }
     }
-   resetbutton.addEventListener('click', handleResetClick)
-    function handleResetClick(e) {
+    searchInput.oninput = handleInput
+    resetbutton.addEventListener('click', (e) => {
         if (e) {
             resetbutton.style.backgroundColor = 'white'
         }
-    }
+    })
     document.querySelector('#textsearch').addEventListener('input', (e) => {
       if (e.target.value === '') {
         resetbutton.style.backgroundColor = 'white'
@@ -23,50 +21,86 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     document.querySelector('form').addEventListener('submit', (e) => {
         e.preventDefault()
-        searchAPI(e.target.value)
+        searchAPI(e.target.textsearch.value) //I need 'textsearch' to display correct results?
     })
 })
-//Add user input to the DOM
-function searchAPI (search) {
-    let p = document.createElement('p')
-    p.textContent = search
-   
 
-//Apple API URL 
-    const baseUrl = "https://itunes.apple.com/search?"
-    let searchPath = search
-    let finalUrl = `${baseUrl}term=${searchPath}&media=music&limit=20`
+let clientID = 'a45eb12484d24c4199050bdefee6d24b'
+let clientSecret = 'f9765ecc897c46a8998cd3508002ae86'
+const redirectURI = 'http://127.0.0.1:5500/index.html'
+const scope = 'user-read-private user-read-email'
+const TOKEN = 'https://accounts.spotify.com/api/token'
 
-    // let spotifyUrl = `https://api.spotify.com/v1/search?q=${searchPath}&type=track%2Calbum%2Cartist&limit=20&include_external=audio`
-    // const spotifyToken = 'BQCXcf6UvBdKtobVV3FamA0SqYortAd_QpRZuOkLWtnjOgUG6ZjJ-LtEgVbHSc8H-JlK8xWuS9fbU1DR9kYRv0N5QQWCTyAn3lTejruyVj7ziwIpSo9zZtDjsD7oQv8t-OGdSJQLR5SZhfVZsYiEmfPxj1KA3GKuG-U'
-
-//Fetch Request
-fetch(finalUrl)
-    .then(res => {
-     return res.json(); 
-    })
-   .then(json => {
-        const html = json.results      
-        .map(searchTerm => {
-            return `
-            <div class="musician">
-                <p>${searchTerm.artistName}</p>
-                <p><a class="link" target="_blank" rel="noopener noreferrer" href=${searchTerm.artistViewUrl}>Artist Profile</a></p>
-                <p><a class="link" target="_blank" rel="noopener noreferrer" href=${searchTerm.trackViewUrl}>${searchTerm.trackName}</a></p>
-                <p><a class="link" target="_blank" rel="noopener noreferrer" href=${searchTerm.collectionViewUrl}>${searchTerm.collectionName}</a></p>
-                <audio controls src=${searchTerm.previewUrl}> Your browser does not support the <code>audio</code> element.</audio>
-                <p><img src=${searchTerm.artworkUrl100}></img></p>
-            </div>
-            `
-        })
-        //Add search results to the DOM
-document.querySelector('#apple-list').innerHTML = html.join('');
-    })
+const onPageLoad = () => {
+    if (window.location.search.length > 0) {
+        handleRedirect()
+    }
 }
 
-// const input = document.querySelector('#textsearch')
-// input.addEventListener('input', updateValue)
+const handleRedirect = () => {
+    let code = getCode()
+    fetchAccessToken( code )
+}
 
-// const updateValue = (e) => {
-//     console.log(e.target.value)
-// }
+const fetchAccessToken = ( code ) => {
+    let body = 'grant_type=authorization_code'
+    body += '&code=' + code
+    body += '&redirect_uri=' + encodeURI(redirectURI)
+    body += '&client_id=' + clientID
+    body += '&client_secret=' + clientSecret
+    callAuthorizationApi(body)
+}
+
+const callAuthorizationApi = (body) => {
+    let xhr = new XMLHttpRequest()
+    xhr.open('POST', TOKEN, true)
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+    xhr.setRequestHeader('Authorization', 'Basic ' + Buffer.from(clientID + ':' + clientSecret).toString('base64'))
+    xhr.send(body)
+    xhr.onload = handleAuthorizationResponse
+}
+
+const handleAuthorizationResponse = () => {
+    if (res.status == 200){
+        let data = JSON.parse(this.responseText)
+        if ( data.access_token != undefined) {
+            access_token = data.access_token
+            localStorage.set('refresh_token', refresh_token)
+        }
+        if ( data.refresh_token != undefined) {
+            refresh_token = data.refresh_token
+            localStorage.setItem('refresh_token', refresh_token)
+        }
+        onPageLoad()
+    }
+}
+
+const getCode = () => {
+    let code = null
+    const queryString = window.location.search
+    if ( queryString.length > 0 ) {
+        const urlParams = new URLSearchParams(queryString)
+        code = urlParams.get('code')
+    }
+    return code
+}
+
+const requestAuthorization = () => {
+    let authURL = 'https://accounts.spotify.com/authorize'
+    authURL += '?client_id=' + clientID
+    authURL += '&response_type=code'
+    authURL += '&redirect_uri=' + encodeURI(redirectURI)
+    authURL += '&scope=' + scope
+    authURL += '&show_dialog=true'
+    window.location.href = authURL //show Spotify's authorization screen
+}
+
+
+//Add user input to the DOM
+const searchAPI = (search) => {
+    let p = document.createElement('p')
+    p.textContent = search
+}
+
+
+  //https://accounts.spotify.com/authorize?response_type=token&client_id=a45eb12484d24c4199050bdefee6d24b&scope=user-read-private user-read-email&redirect_uri=http://localhost:8888

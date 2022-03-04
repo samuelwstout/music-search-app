@@ -28,9 +28,6 @@ body {
     padding: 8px 52px;
     border: none;
 }
-/* #textsearch:focus #close-icon {
-
-} */
 #textsearch:focus {
     outline: none;
 }
@@ -55,4 +52,17 @@ body {
     left: -999px;
     width: 0px;
     height: 0px;
+}
+.white {
+    color: #fff;
+}
+/* .form-control {
+  position: relative;
+  right: 475px;
+  bottom: 75px;
+} */
+.btn {
+    position: relative;
+    right: 475px;
+    bottom: 75px;
 }
