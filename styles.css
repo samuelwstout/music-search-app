@@ -5,9 +5,6 @@ body {
     text-align: center;
     color: #9e3131;
 }
-#search {
-   text-align: center;
-}
 #result-list {
     display: flex;
     flex-direction: row;
@@ -25,14 +22,7 @@ div.musician {
 div.musician:hover {
     background-color: #111;
 }
-#like {
-    background: white;
-}
-#like.second {
-    background: #9e3131;
-}
 #search {
-    text-align: center;
     background-color: #000;
     padding: 60px;
     margin-top: -5px;
@@ -48,20 +38,20 @@ div.musician:hover {
     padding: 8px 52px;
     position: relative;
     bottom: 15px;
-    left: 20px;
+    left: 490px;
     border: none;
 }
 .search-icon {
     position: relative;
     top: -5px;
-    right: 318px;
+    left: 152px;
 }
 #textsearch:focus {
     outline: none;
 }
 #close-icon {
     position: relative;
-    right: 55px;
+    left: 415px;
     bottom: 7px;
 }
 #resetbutton {
@@ -70,7 +60,7 @@ div.musician:hover {
     width: 35px;
     height: 36px;
     position: relative;
-    right: 90px;
+    left: 380px;
     bottom: 2px;
     border-radius: 10px;
 }
